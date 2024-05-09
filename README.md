@@ -2,6 +2,11 @@
 
 This repository contains our source code for our cs2951f project investigating applications of DQN to Gin Rummy. Our group members were Michelle Liu, Evan Lu, and Peter Curtin.
 
+## Setup
+
+To properly setup your environment, we recommend creating a virtual environment and then installing the requirements in `requirements.txt`. Keep in mind that this will install the CUDA version of PyTorch,
+so you may wish to instead manually install RLCard, PyTorch, NumPy, and `statsmodels` (only necessary for `tables.ipynb` according to your system configuration. 
+
 ## Files
 
 `src.py` contains the source for our learned agents, as well as a human agent that can be used to interface with the environment on Google Colab.
@@ -13,4 +18,4 @@ All of them are designed to be run as Weights and Biases agents, for example: `w
 4. `run-lstm.py` is a training script for training our `SeqDoubleDQNAgent` on the simplified observation environment.
 5. `run-self.py` is a training script for training our $\text{Simple}_{\text{SELF}}$ model.
 
-Finally, the `tests.ipynb` file was used to generate several tables in our final report, and requires checkpoints from trained models to function. 
+Finally, the `tables.ipynb` file was used to generate several tables in our final report, and requires checkpoints from trained models to function. 
